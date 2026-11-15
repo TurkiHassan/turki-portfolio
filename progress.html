@@ -1,0 +1,2188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>لوحة المتابعة — تركي</title>
+<meta name="description" content="لوحة محلية لمتابعة مهام الموقع، ما أُنجز وما بقي، وآخر التغييرات.">
+<meta name="theme-color" content="#050608">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/thmanyah-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/el-messiri-arabic.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face {
+  font-family: "Thmanyah Serif Display";
+  src: url("assets/fonts/thmanyah-serif-display-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Thmanyah Serif Display";
+  src: url("assets/fonts/thmanyah-serif-display-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Thmanyah Serif Display";
+  src: url("assets/fonts/thmanyah-serif-display-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "El Messiri";
+  src: url("assets/fonts/el-messiri-arabic.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+    U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+    U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+1EE00-1EEFF;
+}
+@font-face {
+  font-family: "El Messiri";
+  src: url("assets/fonts/el-messiri-latin.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+:root {
+  color-scheme: dark;
+  --void: #050608;
+  --panel: #0a0c10;
+  --ink: #f4f4f5;
+  --mute: #ffffff8f;
+  --faint: #ffffff73;
+  --line: #ffffff1a;
+  --line-strong: #ffffff2b;
+  --blue: #1c79ff;
+  --green: #7dffa8;
+  --amber: #ffc46b;
+  --font-display: "Thmanyah Serif Display", "El Messiri", "Iowan Old Style", Georgia, serif;
+  --font-sans: "El Messiri", "Geeza Pro", "Segoe UI", system-ui, sans-serif;
+  --shell: 1240px;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #2a2d33 #050608;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 300px;
+  background:
+    radial-gradient(55% 44% at 88% -6%, #1c79ff24, transparent 68%),
+    radial-gradient(44% 38% at 2% 100%, #7dffa80d, transparent 72%),
+    var(--void);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #ffffff12 1px, transparent 1px);
+  background-size: 26px 26px;
+  opacity: 0.42;
+  -webkit-mask-image: radial-gradient(80% 70% at 50% 20%, #000 0%, transparent 78%);
+  mask-image: radial-gradient(80% 70% at 50% 20%, #000 0%, transparent 78%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.28;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.16'/%3E%3C/svg%3E");
+}
+
+::selection {
+  background: var(--blue);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--void);
+}
+::-webkit-scrollbar-thumb {
+  background: #24272c;
+  border-radius: 99px;
+  border: 3px solid var(--void);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+:where(a, button, input, summary):focus-visible {
+  outline: 2px solid #ffffff8c;
+  outline-offset: 3px;
+}
+
+.skip {
+  position: fixed;
+  z-index: 90;
+  inset-block-start: 12px;
+  inset-inline-start: 12px;
+  padding: 8px 12px;
+  border-radius: 9px;
+  background: #fff;
+  color: #050608;
+  font-size: 12px;
+  text-decoration: none;
+  transform: translateY(-160%);
+  transition: transform 0.2s var(--ease);
+}
+.skip:focus {
+  transform: none;
+}
+
+/* ------------------------------------------------------------------ top line */
+
+.top-line {
+  position: fixed;
+  z-index: 60;
+  inset-block-start: 0;
+  inset-inline: 0;
+  height: 2px;
+  background: #ffffff0d;
+  pointer-events: none;
+}
+.top-line i {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--green), var(--blue));
+  box-shadow: 0 0 12px #1c79ff8c;
+  transition: width 0.9s var(--ease);
+}
+
+/* -------------------------------------------------------------------- header */
+
+.site-head {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  border-bottom: 1px solid var(--line);
+  background: #050608bf;
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  backdrop-filter: blur(18px) saturate(150%);
+}
+
+.head-inner {
+  max-width: var(--shell);
+  height: 64px;
+  margin-inline: auto;
+  padding-inline: 28px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+.brand img {
+  width: 30px;
+  height: 30px;
+  border-radius: 29%;
+  box-shadow: 0 1px 2px #0006, 0 8px 18px #00000059;
+}
+.brand span {
+  white-space: nowrap;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1;
+}
+.brand i {
+  margin-inline: 5px;
+  color: #ffffff38;
+  font-style: normal;
+  font-weight: 400;
+}
+.brand b {
+  color: var(--mute);
+  font-weight: 500;
+}
+.brand:hover b {
+  color: var(--ink);
+}
+
+.head-actions {
+  margin-inline-start: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 30px;
+  padding: 0 11px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: #ffffff06;
+  color: var(--mute);
+  font-size: 11px;
+  white-space: nowrap;
+}
+.live-pill i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 8px #7dffa8a6;
+  animation: pulse 3s ease-in-out infinite;
+}
+.live-pill.is-active {
+  color: #bad3ff;
+  border-color: #1c79ff4d;
+  background: #1c79ff12;
+}
+.live-pill.is-active i {
+  background: var(--blue);
+  box-shadow: 0 0 8px #1c79ffa6;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+
+.clock {
+  color: #ffffff5c;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.head-refresh {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 99px;
+  background: transparent;
+  color: #ffffff5c;
+  cursor: pointer;
+  transition: color 0.18s, background 0.18s;
+}
+.head-refresh:hover {
+  color: #fff;
+  background: #ffffff08;
+}
+.head-refresh svg {
+  width: 13px;
+  height: 13px;
+}
+
+.head-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 99px;
+  color: var(--mute);
+  font-size: 11.5px;
+  text-decoration: none;
+  transition: color 0.18s, background 0.18s;
+}
+.head-link:hover {
+  color: var(--ink);
+  background: #ffffff08;
+}
+.head-link svg {
+  width: 13px;
+  height: 13px;
+  transform: scaleX(-1);
+}
+[dir="ltr"] .head-link svg {
+  transform: none;
+}
+
+/* --------------------------------------------------------------------- shell */
+
+.shell {
+  position: relative;
+  z-index: 1;
+  max-width: var(--shell);
+  margin-inline: auto;
+  padding: 0 28px;
+}
+
+/* ---------------------------------------------------------------------- hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.8fr);
+  gap: clamp(32px, 5vw, 76px);
+  align-items: end;
+  padding: 48px 0 34px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  color: #ffffff70;
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.eyebrow::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  flex: none;
+  background: #ffffff42;
+}
+
+h1 {
+  max-width: 16ch;
+  margin: 16px 0 18px;
+  font-family: var(--font-display);
+  font-size: clamp(38px, 5.1vw, 64px);
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+h1 em {
+  font-style: normal;
+  font-weight: 300;
+  color: #c7d3e3;
+}
+
+.lede {
+  max-width: 53ch;
+  margin: 0;
+  color: var(--mute);
+  font-size: 15px;
+  line-height: 1.85;
+  text-wrap: pretty;
+}
+
+.hero-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  margin-top: 20px;
+  color: var(--faint);
+  font-size: 11px;
+}
+.hero-note span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.hero-note i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffffff38;
+}
+
+/* ------------------------------------------------------------------ now card */
+
+.now-card {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  border: 1px solid #ffffff1f;
+  border-radius: 24px;
+  background:
+    radial-gradient(120% 120% at 100% 0%, #1c79ff16, transparent 60%),
+    linear-gradient(180deg, #ffffff08, #ffffff02);
+  box-shadow: 0 28px 70px #00000059;
+}
+.now-card::after {
+  content: "";
+  position: absolute;
+  inset-inline: 22px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ffffff38, transparent);
+}
+.now-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.now-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff8c;
+  font-size: 10.5px;
+  white-space: nowrap;
+}
+.now-state i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 8px #7dffa8a6;
+}
+.now-state.is-active {
+  color: #b7d1ff;
+}
+.now-state.is-active i {
+  background: var(--blue);
+  box-shadow: 0 0 8px #1c79ffa6;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+.now-card h2 {
+  margin: 14px 0 6px;
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.now-card p {
+  margin: 0;
+  color: var(--mute);
+  font-size: 12.5px;
+  line-height: 1.8;
+  min-height: 3.6em;
+}
+.now-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 9.5px;
+}
+.now-foot time {
+  color: #ffffff5c;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.now-foot a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #ffffffa6;
+  text-decoration: none;
+}
+.now-foot a:hover {
+  color: #fff;
+}
+.now-foot svg {
+  width: 11px;
+  height: 11px;
+  transform: scaleX(-1);
+}
+[dir="ltr"] .now-foot svg {
+  transform: none;
+}
+
+/* --------------------------------------------------------------------- stats */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 4px 0 22px;
+}
+
+.kpi {
+  position: relative;
+  overflow: hidden;
+  padding: 16px 17px 14px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #0b0e13cc, #080a0dcc);
+  box-shadow: inset 0 1px #ffffff0a;
+}
+.kpi-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--faint);
+  font-size: 10.5px;
+}
+.kpi-label i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--kpi, #fff);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--kpi, #fff) 60%, transparent);
+}
+.kpi-value {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin-top: 10px;
+  color: var(--kpi, var(--ink));
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1;
+}
+.kpi-value small {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  color: var(--faint);
+}
+.kpi-foot {
+  margin-top: 10px;
+  color: #ffffff4d;
+  font-size: 9.5px;
+  line-height: 1.4;
+}
+.kpi-bar {
+  height: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #ffffff0f;
+}
+.kpi-bar i {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--blue), var(--green));
+  transition: width 0.9s var(--ease);
+}
+.kpi--done { --kpi: var(--green); }
+.kpi--active { --kpi: var(--blue); }
+.kpi--next { --kpi: var(--amber); }
+
+/* --------------------------------------------------------------------- grid */
+
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.58fr) minmax(290px, 0.82fr);
+  gap: 18px;
+  align-items: start;
+}
+
+/* -------------------------------------------------------------------- board */
+
+.board {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: linear-gradient(180deg, #0b0e13e6, #080a0de6);
+  box-shadow: 0 30px 80px #0000004d;
+}
+
+.board-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 22px 0;
+}
+.board-head h2 {
+  margin: 7px 0 0;
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+.board-note {
+  margin: 5px 0 0;
+  color: #ffffff52;
+  font-size: 11px;
+}
+.board-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+}
+.reset {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: #ffffff04;
+  color: var(--faint);
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  cursor: pointer;
+  transition: color 0.18s, background 0.18s, border-color 0.18s;
+}
+.reset:hover {
+  color: var(--ink);
+  border-color: var(--line-strong);
+  background: #ffffff08;
+}
+.reset svg {
+  width: 12px;
+  height: 12px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  padding: 0 22px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  max-width: 100%;
+  padding: 3px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: #ffffff04;
+  scrollbar-width: none;
+}
+.filters::-webkit-scrollbar {
+  display: none;
+}
+.filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 27px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 99px;
+  background: transparent;
+  color: var(--mute);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+}
+.filter b {
+  color: #ffffff42;
+  font-size: 9px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.filter:hover {
+  color: var(--ink);
+}
+.filter.is-on {
+  color: #fff;
+  background: #ffffff10;
+  box-shadow: inset 0 0 0 1px #ffffff1a;
+}
+.filter.is-on b {
+  color: #ffffffb3;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-inline-start: auto;
+}
+.search svg {
+  position: absolute;
+  inset-inline-start: 11px;
+  width: 13px;
+  height: 13px;
+  color: #ffffff47;
+  pointer-events: none;
+}
+.search input {
+  width: 186px;
+  height: 34px;
+  padding: 0 31px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: #ffffff05;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  outline: none;
+  transition: border-color 0.18s, background 0.18s;
+}
+.search input::placeholder {
+  color: #ffffff42;
+}
+.search input:focus {
+  border-color: #1c79ff66;
+  background: #1c79ff0b;
+}
+
+.task-list {
+  padding: 6px 10px 10px;
+}
+
+.task {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: start;
+  padding: 15px 12px;
+  border-radius: 14px;
+  transition: background 0.2s var(--ease);
+  scroll-margin-top: 90px;
+}
+.task:hover {
+  background: #ffffff05;
+}
+.task[data-status="active"] {
+  background: linear-gradient(270deg, #1c79ff10, transparent 58%);
+}
+.task.flash {
+  animation: flash 1.6s var(--ease);
+}
+@keyframes flash {
+  0% { background: #1c79ff2b; }
+  100% { background: transparent; }
+}
+
+.task-main {
+  min-width: 0;
+}
+.task-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.task h3 {
+  margin: 0;
+  color: #ffffffee;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.task p {
+  max-width: 62ch;
+  margin: 4px 0 0;
+  color: #ffffff73;
+  font-size: 12.5px;
+  line-height: 1.75;
+}
+.area {
+  padding: 1px 6px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: #ffffff52;
+  font-size: 9px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.task-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+  color: #ffffff3d;
+  font-size: 9.5px;
+}
+.task-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex: none;
+}
+.task-date {
+  color: #ffffff38;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 27px;
+  padding: 0 9px;
+  border: 1px solid;
+  border-radius: 99px;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.18s, border-color 0.18s, color 0.18s;
+}
+.status i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.status--done {
+  color: #a9f6c3;
+  border-color: #7dffa82e;
+  background: #7dffa80d;
+}
+.status--done:hover {
+  background: #7dffa81a;
+  border-color: #7dffa85c;
+}
+.status--active {
+  color: #bcd5ff;
+  border-color: #1c79ff4d;
+  background: #1c79ff12;
+}
+.status--active i {
+  box-shadow: 0 0 7px currentColor;
+  animation: pulse 2s ease-in-out infinite;
+}
+.status--active:hover {
+  background: #1c79ff24;
+  border-color: #1c79ff80;
+}
+.status--next {
+  color: #ffd8a0;
+  border-color: #ffc46b33;
+  background: #ffc46b0d;
+}
+.status--next:hover {
+  background: #ffc46b1a;
+  border-color: #ffc46b5c;
+}
+
+.empty {
+  padding: 44px 16px;
+  color: var(--faint);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------- side */
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  padding: 19px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: linear-gradient(180deg, #0b0e13d9, #080a0dd9);
+  box-shadow: inset 0 1px #ffffff08;
+}
+
+.progress-card {
+  text-align: center;
+  background:
+    radial-gradient(100% 80% at 50% 0%, #1c79ff12, transparent 70%),
+    linear-gradient(180deg, #0b0e13d9, #080a0dd9);
+}
+
+.ring-wrap {
+  position: relative;
+  width: 144px;
+  height: 144px;
+  margin: 2px auto 13px;
+}
+.ring {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.ring circle {
+  fill: none;
+  stroke-width: 6;
+}
+.ring .track {
+  stroke: #ffffff0f;
+}
+.ring .fill {
+  stroke: url(#ringGrad);
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 7px #1c79ff66);
+  transition: stroke-dashoffset 0.9s var(--ease);
+}
+.ring-center {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.ring-center b {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.ring-center span {
+  margin-top: 5px;
+  color: #ffffff52;
+  font-size: 9.5px;
+  font-variant-numeric: tabular-nums;
+}
+.progress-card h3 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+}
+.progress-card > p {
+  margin: 3px 0 0;
+  color: #ffffff52;
+  font-size: 10px;
+}
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 13px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  text-align: start;
+  color: #ffffff70;
+  font-size: 10px;
+}
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.legend i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex: none;
+}
+.legend .l-done { background: var(--green); }
+.legend .l-active { background: var(--blue); }
+.legend .l-next { background: var(--amber); }
+.legend b {
+  margin-inline-start: auto;
+  color: #ffffff4d;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.card-head span.count {
+  color: #ffffff3d;
+  font-size: 9.5px;
+}
+
+.next-list,
+.link-list {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.next-item {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr) 13px;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 2px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  color: inherit;
+  font-family: var(--font-sans);
+  text-align: start;
+  cursor: pointer;
+}
+.next-item:first-child {
+  border-top: 0;
+}
+.next-item > b {
+  color: #ffffff3d;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 400;
+}
+.next-item > span {
+  color: #ffffffd9;
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+.next-item small {
+  display: block;
+  margin-top: 1px;
+  color: #ffffff47;
+  font-size: 9px;
+}
+.next-item svg {
+  width: 12px;
+  height: 12px;
+  color: #ffffff38;
+  transform: scaleX(-1);
+  transition: color 0.18s, transform 0.18s;
+}
+.next-item:hover > span {
+  color: #fff;
+}
+.next-item:hover svg {
+  color: #fff;
+  transform: scaleX(-1) translateX(2px);
+}
+.next-empty {
+  margin: 12px 0 0;
+  padding: 12px 0 4px;
+  border-top: 1px solid var(--line);
+  color: #ffffff5c;
+  font-size: 10.5px;
+}
+
+.link-group + .link-group {
+  margin-top: 9px;
+  padding-top: 9px;
+  border-top: 1px solid var(--line);
+}
+.link-label {
+  color: #ffffff38;
+  font-size: 9px;
+}
+.link-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 0;
+  color: #ffffffc2;
+  font-size: 11.5px;
+  text-decoration: none;
+}
+.link-row:hover {
+  color: #fff;
+}
+.link-row svg {
+  width: 12px;
+  height: 12px;
+  flex: none;
+  color: #ffffff38;
+}
+.link-row em {
+  margin-inline-start: auto;
+  color: #ffffff33;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: 9px;
+}
+.link-row em svg {
+  width: 10px;
+  height: 10px;
+  transform: scaleX(-1);
+}
+[dir="ltr"] .link-row em svg {
+  transform: none;
+}
+
+/* ---------------------------------------------------------------------- log */
+
+.log-card {
+  margin-top: 18px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: #0a0c10a6;
+}
+.log-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+}
+.log-head h2 {
+  margin: 7px 0 0;
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+.log-head span {
+  color: #ffffff3d;
+  font-size: 9.5px;
+  font-variant-numeric: tabular-nums;
+}
+.log-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  margin-top: 12px;
+}
+.log-item {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 10px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+.log-item time {
+  color: #ffffff3d;
+  font-size: 9.5px;
+  font-variant-numeric: tabular-nums;
+  padding-top: 2px;
+}
+.log-item h3 {
+  margin: 0;
+  color: #ffffffd9;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.log-item p {
+  margin: 2px 0 0;
+  color: #ffffff66;
+  font-size: 10.5px;
+  line-height: 1.65;
+}
+
+/* ------------------------------------------------------------------- footer */
+
+.foot {
+  position: relative;
+  z-index: 1;
+  max-width: var(--shell);
+  margin-inline: auto;
+  padding: 10px 28px 36px;
+}
+.foot-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: #ffffff4d;
+  font-size: 10px;
+}
+.foot-inner span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.foot-inner i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffffff2e;
+}
+.foot-inner a {
+  color: #ffffff70;
+  text-decoration: none;
+}
+.foot-inner a:hover {
+  color: #fff;
+}
+
+/* -------------------------------------------------------------------- toast */
+
+.toast {
+  position: fixed;
+  z-index: 70;
+  inset-inline: 0;
+  bottom: 24px;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.2s, transform 0.3s var(--ease);
+}
+.toast.is-on {
+  opacity: 1;
+  transform: none;
+}
+.toast span {
+  max-width: min(92vw, 420px);
+  padding: 9px 14px;
+  border: 1px solid #ffffff21;
+  border-radius: 99px;
+  background: #0b0e13e6;
+  color: #ffffffd9;
+  font-size: 11px;
+  text-align: center;
+  box-shadow: 0 18px 50px #00000080;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+/* ------------------------------------------------------------------ motion */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ----------------------------------------------------------------- mobile */
+
+@media (max-width: 1100px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.7fr);
+    gap: 32px;
+  }
+  .stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .main-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .side {
+    position: static;
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+  .progress-card {
+    grid-row: span 2;
+  }
+  .links-card {
+    grid-column: 2;
+  }
+  .log-grid {
+    grid-template-columns: 1fr;
+  }
+  .log-item:nth-child(2) {
+    border-top: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 860px) {
+  .head-inner,
+  .shell {
+    padding-inline: 22px;
+  }
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+    padding-block: 36px 26px;
+  }
+  .now-card {
+    max-width: 520px;
+  }
+  .stats {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 18px;
+  }
+  .side {
+    grid-template-columns: 1fr;
+  }
+  .progress-card {
+    grid-row: auto;
+  }
+  .links-card {
+    grid-column: auto;
+  }
+  .log-card {
+    padding: 20px;
+  }
+  .foot {
+    padding-inline: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .head-inner {
+    height: 58px;
+    gap: 10px;
+    padding-inline: 16px;
+  }
+  .brand img {
+    width: 27px;
+    height: 27px;
+  }
+  .brand span {
+    font-size: 12px;
+  }
+  .brand i,
+  .brand .brand-site {
+    display: none;
+  }
+  .clock {
+    display: none;
+  }
+  .head-actions {
+    gap: 5px;
+  }
+  .live-pill {
+    height: 27px;
+    padding: 0 8px;
+    font-size: 10px;
+  }
+  .head-link {
+    width: 30px;
+    padding: 0;
+    justify-content: center;
+  }
+  .head-link span {
+    display: none;
+  }
+  .shell {
+    padding-inline: 16px;
+  }
+  h1 {
+    font-size: clamp(34px, 10vw, 46px);
+    margin-top: 12px;
+  }
+  .lede {
+    font-size: 14px;
+  }
+  .now-card {
+    padding: 17px;
+  }
+  .now-card h2 {
+    font-size: 22px;
+  }
+  .now-foot {
+    flex-wrap: wrap;
+  }
+  .stats {
+    gap: 8px;
+  }
+  .kpi {
+    padding: 13px 13px 12px;
+  }
+  .kpi-value {
+    font-size: 29px;
+  }
+  .kpi-foot {
+    font-size: 9px;
+  }
+  .board-head {
+    padding: 18px 16px 0;
+  }
+  .board-head h2 {
+    font-size: 23px;
+  }
+  .board-note {
+    max-width: 26ch;
+  }
+  .toolbar {
+    padding: 14px 16px;
+  }
+  .search {
+    width: 100%;
+    margin-inline-start: 0;
+  }
+  .search input {
+    width: 100%;
+  }
+  .task-list {
+    padding: 4px 6px 8px;
+  }
+  .task {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 9px;
+    padding: 13px 10px;
+  }
+  .task-side {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9px;
+    width: 100%;
+  }
+  .task-side .task-date {
+    order: 2;
+  }
+  .status {
+    height: 25px;
+  }
+  .side {
+    gap: 9px;
+  }
+  .card {
+    padding: 16px;
+  }
+  .log-card {
+    margin-top: 15px;
+    padding: 17px;
+  }
+  .log-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .log-head h2 {
+    font-size: 22px;
+  }
+  .log-item {
+    grid-template-columns: 38px minmax(0, 1fr);
+  }
+  .foot {
+    padding: 8px 16px 28px;
+  }
+  .foot-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .toast {
+    bottom: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .live-pill {
+    padding-inline: 6px;
+  }
+  .live-pill span {
+    display: none;
+  }
+  .live-pill i {
+    width: 6px;
+    height: 6px;
+  }
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .kpi-label {
+    font-size: 9.5px;
+  }
+  .kpi-value {
+    font-size: 26px;
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#tasks">تخطَّ إلى المهام</a>
+<div class="top-line" aria-hidden="true"><i id="topProgress"></i></div>
+
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/mark.svg" alt="" width="30" height="30">
+      <span><span class="brand-site">تركي <i>/</i> </span><b>لوحة المتابعة</b></span>
+    </a>
+    <div class="head-actions">
+      <span class="live-pill" id="livePill" role="status" aria-label="حالة العمل: مستقر"><i aria-hidden="true"></i><span id="liveText">مستقر</span></span>
+      <span class="clock mono" id="clock">--:--:--</span>
+      <button class="head-refresh" type="button" id="refresh" aria-label="تحديث اللوحة" title="تحديث اللوحة">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.8 2.6v3.8h3.8M13.2 13.4v-3.8H9.4"/><path d="M12.4 6.1a4.6 4.6 0 0 0-7.9-1.6L2.8 6.4M3.6 9.9a4.6 4.6 0 0 0 7.9 1.6l1.7-1.9"/></svg>
+      </button>
+      <a class="head-link" href="index.html" aria-label="العودة إلى الموقع">
+        <span>الموقع</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="shell" id="main">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">متابعة البناء</p>
+      <h1>ما جرى على الموقع، <em>وما بقي</em>.</h1>
+      <p class="lede">لوحة واحدة تتابع بها العمل: كل مهمة وحالتها، آخر التغييرات، والخطوة القادمة. اضغط حالة أي مهمة لتحديثها — الحالة تُحفظ في هذا المتصفح.</p>
+      <div class="hero-note">
+        <span>لوحة محلية <i></i></span>
+        <span>بلا خادم</span>
+        <span>الحالة تُحفظ تلقائيًا</span>
+      </div>
+    </div>
+
+    <aside class="now-card" aria-live="polite">
+      <div class="now-top">
+        <p class="eyebrow">الآن</p>
+        <span class="now-state" id="nowState"><i aria-hidden="true"></i><span>مستقر</span></span>
+      </div>
+      <h2 id="nowTitle">لا شيء قيد التنفيذ</h2>
+      <p id="nowDetail">البناء الحالي مكتمل. راجع «التالي» للخطوة القادمة.</p>
+      <div class="now-foot">
+        <span>آخر تعديل للملف <time id="stamp">—</time></span>
+        <a href="index.html">افتح الموقع
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </aside>
+  </section>
+
+  <section class="stats" aria-label="إحصاءات المهام">
+    <article class="kpi">
+      <div class="kpi-label"><span>نسبة الإنجاز</span><i aria-hidden="true"></i></div>
+      <div class="kpi-value"><span id="kpiPct">0%</span></div>
+      <div class="kpi-bar"><i id="kpiBar"></i></div>
+      <p class="kpi-foot" id="kpiPctNote">—</p>
+    </article>
+    <article class="kpi kpi--done">
+      <div class="kpi-label"><span>منجز</span><i aria-hidden="true"></i></div>
+      <div class="kpi-value"><span id="kpiDone">0</span><small>مهمة</small></div>
+      <p class="kpi-foot" id="kpiDoneNote">—</p>
+    </article>
+    <article class="kpi kpi--active">
+      <div class="kpi-label"><span>قيد التنفيذ</span><i aria-hidden="true"></i></div>
+      <div class="kpi-value"><span id="kpiActive">0</span><small>الآن</small></div>
+      <p class="kpi-foot" id="kpiActiveNote">—</p>
+    </article>
+    <article class="kpi kpi--next">
+      <div class="kpi-label"><span>التالي</span><i aria-hidden="true"></i></div>
+      <div class="kpi-value"><span id="kpiNext">0</span><small>خطوة</small></div>
+      <p class="kpi-foot" id="kpiNextNote">—</p>
+    </article>
+  </section>
+
+  <div class="main-grid">
+    <section class="board" id="tasks" aria-labelledby="tasksTitle">
+      <div class="board-head">
+        <div>
+          <p class="eyebrow">المهام</p>
+          <h2 id="tasksTitle">ما جرى وما بقي</h2>
+          <p class="board-note">اضغط الحالة لتغييرها — الحفظ تلقائي.</p>
+        </div>
+        <div class="board-actions">
+          <button class="reset" type="button" id="reset">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2.6v4h4M13 13.4v-4H9"/><path d="M12.1 6a4.8 4.8 0 0 0-8.2-1.7L3 6.1M3.9 10a4.8 4.8 0 0 0 8.2 1.7l.9-1.8"/></svg>
+            إعادة الضبط
+          </button>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="تصفية المهام">
+          <button class="filter is-on" type="button" data-filter="all" aria-pressed="true">الكل <b data-count="all">0</b></button>
+          <button class="filter" type="button" data-filter="done" aria-pressed="false">منجز <b data-count="done">0</b></button>
+          <button class="filter" type="button" data-filter="active" aria-pressed="false">قيد التنفيذ <b data-count="active">0</b></button>
+          <button class="filter" type="button" data-filter="next" aria-pressed="false">التالي <b data-count="next">0</b></button>
+        </div>
+        <label class="search">
+          <span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">ابحث في المهام</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="4.6"/><path d="m10.5 10.5 3.1 3.1" stroke-linecap="round"/></svg>
+          <input id="search" type="search" placeholder="ابحث في المهام" autocomplete="off">
+        </label>
+      </div>
+
+      <div class="task-list" id="taskList"></div>
+      <p class="empty" id="empty" hidden>لا توجد مهام مطابقة.</p>
+    </section>
+
+    <aside class="side" aria-label="ملخص اللوحة">
+      <section class="card progress-card">
+        <div class="ring-wrap">
+          <svg class="ring" viewBox="0 0 128 128" aria-hidden="true">
+            <defs>
+              <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#7dffa8"/>
+                <stop offset="0.55" stop-color="#1c79ff"/>
+                <stop offset="1" stop-color="#1c79ff"/>
+              </linearGradient>
+            </defs>
+            <circle class="track" cx="64" cy="64" r="55"/>
+            <circle class="fill" id="ringFill" cx="64" cy="64" r="55"/>
+          </svg>
+          <div class="ring-center">
+            <b id="ringPct">0%</b>
+            <span id="ringCount" dir="ltr">0 / 0</span>
+          </div>
+        </div>
+        <h3>نسبة الإنجاز</h3>
+        <p id="ringNote">—</p>
+        <div class="legend">
+          <span><i class="l-done"></i>منجز <b id="legendDone">0</b></span>
+          <span><i class="l-active"></i>قيد التنفيذ <b id="legendActive">0</b></span>
+          <span><i class="l-next"></i>التالي <b id="legendNext">0</b></span>
+        </div>
+      </section>
+
+      <section class="card next-card">
+        <div class="card-head">
+          <p class="eyebrow">التالي</p>
+          <span class="count" id="nextCount">0</span>
+        </div>
+        <div id="nextList"></div>
+      </section>
+
+      <section class="card links-card">
+        <div class="card-head"><p class="eyebrow">روابط</p></div>
+        <div class="link-list">
+          <div class="link-group">
+            <div class="link-label">الموقع</div>
+            <a class="link-row" href="index.html">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2.6" width="12" height="10.8" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M2 5.8h12" stroke="currentColor" stroke-width="1.2"/></svg>
+              الصفحة الرئيسية <em><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></em>
+            </a>
+            <a class="link-row" href="README.md">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.2 1.8h6.2l3.4 3.4v9H3.2z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M9.2 1.8v3.6h3.6M5.4 8.4h5M5.4 10.7h3.6" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+              README <em>MD</em>
+            </a>
+          </div>
+          <div class="link-group">
+            <div class="link-label">الحسابات</div>
+            <a class="link-row" href="https://github.com/turkihanan1-arch" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-1.9c-3.13.68-3.79-1.5-3.79-1.5-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.4-1.22.71-1.5-2.5-.29-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.7 10.7 0 0 1 5.64 0c2.15-1.45 3.1-1.15 3.1-1.15.61 1.55.23 2.69.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.64 5.27-5.15 5.55.41.35.77 1.03.77 2.08v3.09c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
+              GitHub <em>turkihanan1-arch</em>
+            </a>
+            <a class="link-row" href="https://x.com/nevermind_turki" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.6L6.5 22H3.4l7.3-8.3L1 2h6.4l4.5 6.1L18.9 2Zm-1.1 18h1.7L7.1 3.9H5.3L17.8 20Z"/></svg>
+              X <em>@nevermind_turki</em>
+            </a>
+          </div>
+        </div>
+      </section>
+    </aside>
+  </div>
+
+  <section class="log-card" aria-labelledby="logTitle">
+    <div class="log-head">
+      <div>
+        <p class="eyebrow">سجل التغيير</p>
+        <h2 id="logTitle">آخر ما تغيّر</h2>
+      </div>
+      <span>١٦ نوفمبر ٢٠٢٦</span>
+    </div>
+    <div class="log-grid">
+      <article class="log-item"><time>16.11</time><div><h3>لوحة المتابعة</h3><p>صفحة جديدة تقرأ المهام، تحفظ الحالة محليًا، وتعرض آخر التغييرات.</p></div></article>
+      <article class="log-item"><time>16.11</time><div><h3>حذف «راسلني»</h3><p>الهيرو الآن زر واحد فقط: «ابدأ بالأعمال».</p></div></article>
+      <article class="log-item"><time>16.11</time><div><h3>حسابات أعلى الصفحة</h3><p>GitHub وX ثابتان في الأعلى، مع X في التذييل.</p></div></article>
+      <article class="log-item"><time>15.11</time><div><h3>تقليم الأقسام</h3><p>حُذف «أعمال مختارة» وقسم التواصل مع زر «ابدأ محادثة».</p></div></article>
+      <article class="log-item"><time>15.11</time><div><h3>لوحة المعاينة</h3><p>خمس صفحات هبوط تتبدّل مع التمرير، وأيقونات المواقع نفسها.</p></div></article>
+      <article class="log-item"><time>15.11</time><div><h3>الهوية والتجاوب</h3><p>خطوط محلية، خلفية Unsplash، نسخة جوال، وتبديل عربي/إنجليزي.</p></div></article>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <span>لوحة محلية <i></i> الحالة تُحفظ في هذا المتصفح</span>
+    <span>تركي · ٢٠٢٦ <i></i> <a href="index.html">العودة إلى الموقع</a></span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><span id="toastText"></span></div>
+
+<script>
+(() => {
+  "use strict";
+
+  const TASKS = [
+    {
+      id: "mail",
+      title: "البريد الحقيقي",
+      area: "النشر",
+      status: "next",
+      when: "قادم",
+      detail: "استبدال hello@example.com في app.js وindex.html قبل أي إطلاق."
+    },
+    {
+      id: "deploy",
+      title: "نشر الموقع",
+      area: "النشر",
+      status: "next",
+      when: "قادم",
+      detail: "Vercel أو GitHub Pages، ثم ربط النطاق إن كان جاهزًا."
+    },
+    {
+      id: "alc-shot",
+      title: "صورة ALC العامة",
+      area: "الأعمال",
+      status: "next",
+      when: "قادم",
+      detail: "اللقطة الحالية من الواجهة بعد الدخول؛ يُفضّل صفحة هبوط عامة إن توفّرت."
+    },
+    {
+      id: "new-work",
+      title: "تحديث محتوى الأعمال",
+      area: "الأعمال",
+      status: "next",
+      when: "قادم",
+      detail: "إضافة عمل جديد أو تحديث لقطة ونص، بنفس بنية section.project."
+    },
+    {
+      id: "dashboard",
+      title: "لوحة المتابعة",
+      area: "اللوحة",
+      status: "done",
+      when: "16.11",
+      detail: "هذه الصفحة: مهام، حالة محفوظة محليًا، سجل تغيير، وساعة."
+    },
+    {
+      id: "remove-mail",
+      title: "حذف «راسلني»",
+      area: "الموقع",
+      status: "done",
+      when: "16.11",
+      detail: "بقي زر «ابدأ بالأعمال» وحده في الهيرو."
+    },
+    {
+      id: "accounts",
+      title: "حسابات GitHub وX",
+      area: "الهوية",
+      status: "done",
+      when: "16.11",
+      detail: "روابط ثابتة أعلى الصفحة، مع X في التذييل."
+    },
+    {
+      id: "trim",
+      title: "حذف الأقسام الزائدة",
+      area: "الموقع",
+      status: "done",
+      when: "15.11",
+      detail: "حُذف «أعمال مختارة» وقسم التواصل مع زر «ابدأ محادثة»."
+    },
+    {
+      id: "sync",
+      title: "مزامنة التمرير مع اللوحة",
+      area: "اللوحة",
+      status: "done",
+      when: "15.11",
+      detail: "العمل النشط يبدّل الأيقونة والصورة والنطاق والرقم معًا."
+    },
+    {
+      id: "screens",
+      title: "لقطات صفحات الهبوط",
+      area: "الأعمال",
+      status: "done",
+      when: "15.11",
+      detail: "خمس لقطات 1280×1422 داخل اللوحة، مع نسخة للجوال."
+    },
+    {
+      id: "dock",
+      title: "أيقونات الدوك",
+      area: "اللوحة",
+      status: "done",
+      when: "15.11",
+      detail: "أيقونات المواقع نفسها، مع نقطة وتمييز للعمل النشط."
+    },
+    {
+      id: "panel",
+      title: "لوحة الماك",
+      area: "اللوحة",
+      status: "done",
+      when: "15.11",
+      detail: "شريط قوائم حي، ساعة الرياض، وتبويب يفتح النطاق الحالي."
+    },
+    {
+      id: "projects",
+      title: "خمسة أقسام أعمال",
+      area: "الموقع",
+      status: "done",
+      when: "15.11",
+      detail: "سرد واحد لكل منتج، بدل الأقسام الستة القديمة."
+    },
+    {
+      id: "en",
+      title: "الترجمة الإنجليزية",
+      area: "الهوية",
+      status: "done",
+      when: "15.11",
+      detail: "قاموس EN كامل، تبديل RTL/LTR، وحفظ الاختيار."
+    },
+    {
+      id: "mobile",
+      title: "التجاوب للجوال",
+      area: "الموقع",
+      status: "done",
+      when: "15.11",
+      detail: "تُخفى اللوحة ويظهر كرت المشروع تحت النص عند ≤1100px."
+    },
+    {
+      id: "foundation",
+      title: "الهيكل والهوية",
+      area: "الهوية",
+      status: "done",
+      when: "15.11",
+      detail: "خطوط محلية، خلفية Unsplash، سيرة، دفتر، وتذييل."
+    }
+  ];
+
+  const LABELS = { done: "منجز", active: "قيد التنفيذ", next: "التالي" };
+  const RANK = { active: 0, next: 1, done: 2 };
+  const STORE = "turki-progress-v1";
+  const RING_LENGTH = 2 * Math.PI * 55;
+
+  const $ = (sel, root = document) => root.querySelector(sel);
+  const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+  let overrides = load();
+  let tasks = TASKS.map((task) => ({ ...task, status: overrides[task.id] || task.status }));
+  let filter = "all";
+  let query = "";
+
+  const taskList = $("#taskList");
+  const empty = $("#empty");
+  const search = $("#search");
+  const filterButtons = $$(".filter");
+  const ringFill = $("#ringFill");
+  const ringPct = $("#ringPct");
+  const ringCount = $("#ringCount");
+  const topProgress = $("#topProgress");
+  const livePill = $("#livePill");
+  const liveText = $("#liveText");
+  const nowState = $("#nowState");
+  const nowTitle = $("#nowTitle");
+  const nowDetail = $("#nowDetail");
+  const nextList = $("#nextList");
+  const toast = $("#toast");
+  const toastText = $("#toastText");
+  let toastTimer = 0;
+
+  function load() {
+    try {
+      const raw = localStorage.getItem(STORE);
+      if (!raw) return {};
+      const parsed = JSON.parse(raw);
+      if (!parsed || typeof parsed !== "object") return {};
+      const clean = {};
+      Object.keys(parsed).forEach((key) => {
+        if (parsed[key] === "done" || parsed[key] === "active" || parsed[key] === "next") {
+          clean[key] = parsed[key];
+        }
+      });
+      return clean;
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function save() {
+    try {
+      const state = {};
+      tasks.forEach((task) => {
+        if (task.status !== TASKS.find((base) => base.id === task.id).status) {
+          state[task.id] = task.status;
+        }
+      });
+      localStorage.setItem(STORE, JSON.stringify(state));
+    } catch (e) {
+      notify("تعذر الحفظ في هذا المتصفح.");
+    }
+  }
+
+  function counts() {
+    return {
+      all: tasks.length,
+      done: tasks.filter((task) => task.status === "done").length,
+      active: tasks.filter((task) => task.status === "active").length,
+      next: tasks.filter((task) => task.status === "next").length
+    };
+  }
+
+  function notify(message) {
+    toastText.textContent = message;
+    toast.classList.add("is-on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("is-on"), 2200);
+  }
+
+  function statusDate(task) {
+    if (task.status === "next") return "قادم";
+    if (task.status === "active") return "الآن";
+    return task.when === "قادم" ? "مؤخرًا" : task.when;
+  }
+
+  function renderStats() {
+    const c = counts();
+    const pct = c.all ? Math.round((c.done / c.all) * 100) : 0;
+
+    $("#kpiPct").textContent = pct + "%";
+    $("#kpiDone").textContent = c.done;
+    $("#kpiActive").textContent = c.active;
+    $("#kpiNext").textContent = c.next;
+    $("#kpiBar").style.width = pct + "%";
+    $("#kpiPctNote").textContent = c.done + " من " + c.all + " مهمة مكتملة";
+    $("#kpiDoneNote").textContent = c.done === c.all ? "كل المهام مكتملة" : "من أصل " + c.all;
+    $("#kpiActiveNote").textContent = c.active ? "مهمة مفتوحة الآن" : "لا شيء قيد التنفيذ";
+    $("#kpiNextNote").textContent = c.next ? "خطوة معلّقة" : "لا خطوات معلّقة";
+
+    ringFill.style.strokeDasharray = RING_LENGTH.toFixed(2);
+    ringFill.style.strokeDashoffset = (RING_LENGTH * (1 - pct / 100)).toFixed(2);
+    ringPct.textContent = pct + "%";
+    ringCount.textContent = c.done + " / " + c.all;
+    $("#ringNote").textContent = c.active ? "العمل الجاري الآن: " + tasks.find((t) => t.status === "active").title : "الحالة الأخيرة محفوظة في هذا المتصفح.";
+    $("#legendDone").textContent = c.done;
+    $("#legendActive").textContent = c.active;
+    $("#legendNext").textContent = c.next;
+    topProgress.style.width = pct + "%";
+
+    $$("[data-count]").forEach((el) => {
+      el.textContent = c[el.dataset.count];
+    });
+  }
+
+  function renderNow() {
+    const active = tasks.find((task) => task.status === "active");
+    const c = counts();
+    livePill.classList.toggle("is-active", Boolean(active));
+    liveText.textContent = active ? "قيد التنفيذ" : "مستقر";
+    livePill.setAttribute("aria-label", active ? "حالة العمل: قيد التنفيذ" : "حالة العمل: مستقر");
+    nowState.classList.toggle("is-active", Boolean(active));
+    nowState.lastElementChild.textContent = active ? "قيد التنفيذ" : "مستقر";
+    if (active) {
+      nowTitle.textContent = active.title;
+      nowDetail.textContent = active.detail;
+    } else {
+      nowTitle.textContent = c.next ? "لا شيء قيد التنفيذ" : "كل شيء مكتمل";
+      nowDetail.textContent = c.next
+        ? "البناء الحالي مكتمل. راجع «التالي» للخطوة القادمة."
+        : "لا مهام معلّقة الآن. أي تغيير جديد يبدأ من هنا.";
+    }
+  }
+
+  function renderNext() {
+    const list = tasks.filter((task) => task.status === "next");
+
+    $("#nextCount").textContent = list.length;
+    if (!list.length) {
+      nextList.innerHTML = '<p class="next-empty">لا خطوات معلّقة. كل شيء مكتمل.</p>';
+      return;
+    }
+
+    nextList.innerHTML =
+      '<ul class="next-list">' +
+      list
+        .map(
+          (task, index) =>
+            '<li><button class="next-item" type="button" data-target="' +
+            task.id +
+            '"><b>' +
+            String(index + 1).padStart(2, "0") +
+            "</b><span>" +
+            task.title +
+            "<small>" +
+            task.area +
+            "</small></span>" +
+            '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>'
+        )
+        .join("") +
+      "</ul>";
+  }
+
+  function renderTasks() {
+    const focused = document.activeElement && document.activeElement.dataset ? document.activeElement.dataset.cycle : null;
+    const visible = tasks
+      .filter((task) => filter === "all" || task.status === filter)
+      .filter((task) => {
+        if (!query) return true;
+        const haystack = (task.title + " " + task.detail + " " + task.area).toLowerCase();
+        return haystack.includes(query);
+      })
+      .sort((a, b) => RANK[a.status] - RANK[b.status]);
+
+    empty.hidden = visible.length > 0;
+    taskList.innerHTML = visible
+      .map(
+        (task) =>
+          '<article class="task" id="task-' +
+          task.id +
+          '" data-status="' +
+          task.status +
+          '"><div class="task-main"><div class="task-title"><h3>' +
+          task.title +
+          '</h3><span class="area">' +
+          task.area +
+          '</span></div><p>' +
+          task.detail +
+          "</p></div>" +
+          '<div class="task-side"><span class="task-date mono">' +
+          statusDate(task) +
+          '</span><button class="status status--' +
+          task.status +
+          '" type="button" data-cycle="' +
+          task.id +
+          '" aria-label="' +
+          task.title +
+          ": " +
+          LABELS[task.status] +
+          ' — اضغط لتغيير الحالة" title="تغيير الحالة"><i aria-hidden="true"></i>' +
+          LABELS[task.status] +
+          "</button></div></article>"
+      )
+      .join("");
+
+    if (focused) {
+      const again = taskList.querySelector('[data-cycle="' + focused + '"]');
+      if (again) again.focus({ preventScroll: true });
+    }
+  }
+
+  function renderFilters() {
+    filterButtons.forEach((button) => {
+      const on = button.dataset.filter === filter;
+      button.classList.toggle("is-on", on);
+      button.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+
+  function renderAll() {
+    renderStats();
+    renderNow();
+    renderNext();
+    renderFilters();
+    renderTasks();
+  }
+
+  function cycle(id) {
+    const task = tasks.find((item) => item.id === id);
+    if (!task) return;
+    task.status = task.status === "done" ? "next" : task.status === "next" ? "active" : "done";
+    save();
+    renderAll();
+    renderNext();
+    notify("«" + task.title + "» — " + LABELS[task.status]);
+  }
+
+  function focusTask(id) {
+    filter = "all";
+    query = "";
+    search.value = "";
+    renderAll();
+    requestAnimationFrame(() => {
+      const element = document.getElementById("task-" + id);
+      if (!element) return;
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
+      element.classList.remove("flash");
+      void element.offsetWidth;
+      element.classList.add("flash");
+      element.querySelector("[data-cycle]")?.focus({ preventScroll: true });
+    });
+  }
+
+  function reset() {
+    try {
+      localStorage.removeItem(STORE);
+    } catch (e) {}
+    tasks = TASKS.map((task) => ({ ...task }));
+    filter = "all";
+    query = "";
+    search.value = "";
+    renderAll();
+    notify("أُعيد ضبط اللوحة.");
+  }
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      filter = button.dataset.filter;
+      renderFilters();
+      renderTasks();
+    });
+  });
+
+  search.addEventListener("input", () => {
+    query = search.value.trim().toLowerCase();
+    renderTasks();
+  });
+
+  taskList.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-cycle]");
+    if (button) cycle(button.dataset.cycle);
+  });
+
+  nextList.addEventListener("click", (event) => {
+    const item = event.target.closest("[data-target]");
+    if (item) focusTask(item.dataset.target);
+  });
+
+  $("#reset").addEventListener("click", reset);
+  $("#refresh").addEventListener("click", () => location.reload());
+
+  /* clock + stamp */
+  const clock = $("#clock");
+  const stamp = $("#stamp");
+  const timeFmt = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Asia/Riyadh",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hourCycle: "h23"
+  });
+  const stampFmt = new Intl.DateTimeFormat("ar-SA-u-ca-gregory-nu-latn", {
+    day: "numeric",
+    month: "long",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: "Asia/Riyadh"
+  });
+
+  function tick() {
+    clock.textContent = timeFmt.format(new Date());
+  }
+
+  function setStamp() {
+    let date = new Date(document.lastModified);
+    if (Number.isNaN(date.getTime())) date = new Date();
+    stamp.textContent = stampFmt.format(date);
+    stamp.dateTime = date.toISOString();
+  }
+
+  setStamp();
+  tick();
+  setInterval(tick, 1000);
+
+  renderAll();
+})();
+</script>
+</body>
+</html>
