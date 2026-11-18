@@ -156,23 +156,6 @@
     arAria.set(el.dataset.i18nAria, el.getAttribute("aria-label") || "")
   );
 
-  /* ---------------------------------------------------------------- digits */
-
-  const AR_DIGITS = "٠١٢٣٤٥٦٧٨٩";
-
-  function localDigits(text) {
-    return lang === "ar" ? String(text).replace(/[0-9]/g, (d) => AR_DIGITS[d]) : String(text);
-  }
-
-  const numbered = $$(".project-num, .n-index, #screenTotal");
-  numbered.forEach((el) => (el.dataset.num = el.textContent));
-
-  function applyDigits() {
-    numbered.forEach((el) => (el.textContent = localDigits(el.dataset.num)));
-    const tabNum = $("#screenNum");
-    if (tabNum && current >= 0) tabNum.textContent = localDigits(String(current + 1).padStart(2, "0"));
-  }
-
   /* --------------------------------------------------------------- language */
 
   function applyStrings() {
@@ -298,7 +281,6 @@
   const screens = $$(".screen[data-screen]");
   const sections = $$(".project[data-project]");
   const tab = $("#screenTab");
-  const tabNum = $("#screenNum");
   const tabDomain = $("#screenDomain");
 
   let current = -1;
@@ -338,7 +320,6 @@
       tab.href = project.url;
       tab.title = project.domain;
     }
-    if (tabNum) tabNum.textContent = localDigits(String(index + 1).padStart(2, "0"));
     if (tabDomain) tabDomain.textContent = project.domain;
   }
 
@@ -437,7 +418,6 @@
     updateTabAria(current < 0 ? 0 : current);
     splitHeadings();
     renderRotator();
-    applyDigits();
     tick();
     if (persist) {
       try {
