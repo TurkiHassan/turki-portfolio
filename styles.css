@@ -1172,22 +1172,6 @@ footer {
   align-items: center;
   gap: 14px;
 }
-.footer-by {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  color: var(--mute);
-  text-decoration: none;
-  transition: color 0.18s;
-}
-.footer-by:hover {
-  color: var(--ink);
-}
-.footer-rule {
-  width: 1px;
-  height: 18px;
-  background: var(--hairline);
-}
 .footer-socials {
   display: flex;
   gap: 2px;
@@ -1748,9 +1732,6 @@ html[lang="ar"] .quote-verse blockquote {
   .footer-maker {
     flex-wrap: wrap;
     gap: 10px;
-  }
-  .footer-rule {
-    display: none;
   }
 }
 
