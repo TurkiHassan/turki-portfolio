@@ -2,7 +2,7 @@
    Turki — portfolio behaviour
    - Arabic is the authored default; the English dictionary lives here.
    - Scroll drives the work panel: active project, dock icon, live screen.
-   - Reveal system, split headings, language switch, Riyadh clock, mail links, hero rotator.
+   - Reveal system, split headings, language switch, Riyadh clock, hero rotator.
    ========================================================================== */
 
 (() => {
@@ -10,8 +10,6 @@
 
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
-
-  const EMAIL = "hello@example.com";
 
   const PROJECTS = [
     { url: "https://www.iqudrah.com/", domain: "iqudrah.com" },
@@ -125,13 +123,10 @@
     "build.title": "Got an idea that deserves to be built in Arabic? <em>Let's start it</em>.",
     "build.body":
       "A teacher with a method, a developer who wants to build for Arabic, or a learner who noticed what would make a lesson clearer: the door is open.",
-    "build.cta1": "Write to me",
     "build.cta2": "Follow the build on GitHub",
 
     "footer.mark": "Turki · 2026",
     "footer.credit": "Background: Hikmet on Unsplash",
-    "footer.email": "Email",
-    "footer.emailAria": "Email — write to me",
   };
 
   const TITLES = {
@@ -423,12 +418,7 @@
     }, 2800);
   }
 
-  /* ------------------------------------------------------------- mail + lang */
-
-  function initMail() {
-    const href = `mailto:${EMAIL}`;
-    $$("[data-mail]").forEach((el) => el.setAttribute("href", href));
-  }
+  /* ------------------------------------------------------------------ lang */
 
   function setLang(next, persist = true) {
     lang = next === "en" ? "en" : "ar";
@@ -453,7 +443,6 @@
 
   /* ------------------------------------------------------------------ init */
 
-  initMail();
   setLang(lang, false);
   initPanel();
   initRotator();
