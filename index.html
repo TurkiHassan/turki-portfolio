@@ -3,12 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>تركي — منتجات تعليمية عربية، على الطرف</title>
-<meta name="description" content="خمسة منتجات عربية تعمل في المتصفح: تدريب على القدرات، قراءة PDF، تعلّم الإنجليزية، هندسة الذكاء الاصطناعي، وبايثون.">
+<title>تركي — أبني للعربية ما تستحقه</title>
+<meta name="description" content="خمسة منتجات عربية حيّة في المتصفح، وطموح أكبر: أن يجد كل متعلّم عربي أداته بلغته، من الصفر إلى الاحتراف.">
 <meta name="theme-color" content="#050505">
-<meta property="og:title" content="تركي — منتجات تعليمية عربية، على الطرف">
-<meta property="og:description" content="خمسة منتجات عربية تعمل في المتصفح، مجتمعة في مكان واحد.">
+<meta property="og:title" content="تركي — أبني للعربية ما تستحقه">
+<meta property="og:description" content="خمسة منتجات عربية حيّة في المتصفح، والقادم أكبر.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://turki-portfolio-ivory.vercel.app/">
+<meta property="og:image" content="https://turki-portfolio-ivory.vercel.app/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="تركي — أبني للعربية ما تستحقه">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@nevermind_turki">
+<meta name="twitter:title" content="تركي — أبني للعربية ما تستحقه">
+<meta name="twitter:description" content="خمسة أعمال عربية حيّة في المتصفح، والطريق أطول.">
+<meta name="twitter:image" content="https://turki-portfolio-ivory.vercel.app/assets/og.jpg">
 <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/thmanyah-serif-display-300.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/thmanyah-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -36,7 +46,10 @@
 
 <div class="desk" aria-hidden="true"></div>
 <div class="wall" aria-hidden="true">
-  <img class="wall-photo" src="assets/wall.jpg" alt="" width="2200" height="1133" fetchpriority="high">
+  <picture>
+    <source type="image/webp" srcset="assets/wall-1200.webp 1200w, assets/wall.webp 2200w" sizes="100vw">
+    <img class="wall-photo" src="assets/wall.jpg" alt="" width="2200" height="1133" fetchpriority="high">
+  </picture>
   <div class="wall-scrim"></div>
   <div class="wall-grain"></div>
 </div>
@@ -46,7 +59,7 @@
 </button>
 
 <nav class="top-social" aria-label="حساباتي" data-i18n-aria="social.nav">
-  <a class="top-social__link" href="https://github.com/turkihanan1-arch" target="_blank" rel="noopener" aria-label="GitHub — turkihanan1-arch">
+  <a class="top-social__link" href="https://github.com/turkihassan" target="_blank" rel="noopener" aria-label="GitHub — turkihassan">
     <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-1.9c-3.13.68-3.79-1.5-3.79-1.5-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.4-1.22.71-1.5-2.5-.29-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.7 10.7 0 0 1 5.64 0c2.15-1.45 3.1-1.15 3.1-1.15.61 1.55.23 2.69.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.64 5.27-5.15 5.55.41.35.77 1.03.77 2.08v3.09c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
     <span class="top-social__label" dir="ltr" lang="en">GitHub</span>
   </a>
@@ -65,25 +78,26 @@
           <img src="assets/mark.svg" alt="" width="40" height="40">
           <span data-i18n="brand.name">تركي</span>
         </div>
-        <h1 data-reveal style="--reveal-delay:120ms" data-i18n="hero.title">منتجات تعليمية، على <em>الطرف</em>.</h1>
-        <p class="lede" data-reveal style="--reveal-delay:440ms" data-i18n="hero.lede">خمسة منتجات عربية تعمل في المتصفح: تدريب على القدرات، قراءة PDF، تعلّم الإنجليزية، هندسة الذكاء الاصطناعي، وبايثون. كلها هنا، على حافة الشاشة.</p>
+        <p class="hero-kicker" data-reveal style="--reveal-delay:60ms"><i aria-hidden="true"></i><span data-i18n="hero.kicker">خمسة أعمال حيّة، والطريق أطول</span></p>
+        <h1 data-reveal style="--reveal-delay:120ms" data-i18n="hero.title">أبني للعربية <em>ما تستحقه</em>.</h1>
+        <p class="hero-for" data-reveal style="--reveal-delay:320ms" aria-hidden="true">
+          <span data-i18n="hero.for">من أجل</span>
+          <span class="rotator" id="rotator"><span class="rotator-word is-on">المتعلّم الطموح</span></span>
+        </p>
+        <p class="lede" data-reveal style="--reveal-delay:440ms" data-i18n="hero.lede">كل أداة هنا بدأت سؤالًا لم أجد له جوابًا بالعربية، فكتبتُ الجواب بنفسي. خمسة أعمال تعمل في المتصفح اليوم، وهي السطر الأول من الحكاية، لا آخرها.</p>
         <div class="actions" data-reveal style="--reveal-delay:540ms">
           <a class="buy" href="#p-qudrah" data-i18n="hero.cta1">ابدأ بالأعمال</a>
+          <a class="ghost" href="#vision"><span data-i18n="hero.cta2">اقرأ الطموح</span><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </section>
 
       <section class="project" data-project="0" id="p-qudrah">
         <p class="eyebrow project-eyebrow" data-reveal>
-          <span class="project-num mono">01</span>
+          <span class="project-num" aria-hidden="true"></span>
           <span data-i18n="proj.1.kicker">تدريب · ويب</span>
         </p>
         <h2 data-reveal style="--reveal-delay:80ms" data-i18n="proj.1.title">قُدرة، <em>محاكاة تشبه القاعة</em></h2>
-        <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="proj.1.body">بنك أسئلة لاختبار القدرات يشرح الخطأ قبل الصواب، ثم محاكاة كاملة بمؤقت ونتيجة، بنفس ترتيب القاعة وضغطها.</p>
-        <ul class="project-points" data-reveal style="--reveal-delay:280ms">
-          <li data-i18n="proj.1.p1">بنك أسئلة مع شرح خطوة بخطوة</li>
-          <li data-i18n="proj.1.p2">محاكاة كاملة بمؤقت ونتيجة</li>
-          <li data-i18n="proj.1.p3">يعمل على الجوال بلا تنزيل</li>
-        </ul>
+        <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="proj.1.body">بنك أسئلة للقدرات يشرح الخطأ قبل أن يكشف الصواب، ثم محاكاة كاملة بمؤقّتها وضغطها، كي لا تكون القاعة أول لقاء.</p>
         <div class="actions project-actions" data-reveal style="--reveal-delay:360ms">
           <a class="visit" href="https://www.iqudrah.com/" target="_blank" rel="noopener">
             <span data-i18n="proj.1.cta">افتح قُدرة</span>
@@ -98,16 +112,11 @@
 
       <section class="project" data-project="1" id="p-alc">
         <p class="eyebrow project-eyebrow" data-reveal>
-          <span class="project-num mono">02</span>
+          <span class="project-num" aria-hidden="true"></span>
           <span data-i18n="proj.2.kicker">منصة · تعلّم</span>
         </p>
         <h2 data-reveal style="--reveal-delay:80ms" data-i18n="proj.2.title">رحلة ALC، <em>الإنجليزية كما تُدرَّس</em></h2>
-        <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="proj.2.body">منهج ALC كاملًا في المتصفح: ثلاثون كتابًا، خمسة آلاف كلمة بالنطق والأمثلة، وبطاقات مراجعة واختبارات تربط الكلمة بدرسها.</p>
-        <ul class="project-points" data-reveal style="--reveal-delay:280ms">
-          <li data-i18n="proj.2.p1">٣٠ كتابًا و٥٠٠٠ كلمة بالنطق</li>
-          <li data-i18n="proj.2.p2">بطاقات مراجعة واختبار لكل درس</li>
-          <li data-i18n="proj.2.p3">مسار متدرج للقواعد والمفردات</li>
-        </ul>
+        <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="proj.2.body">منهج ALC كاملًا في المتصفح: ثلاثون كتابًا، وخمسة آلاف كلمة بنطقها وأمثلتها، وبطاقات مراجعة تعيد كل كلمة إلى درسها.</p>
         <div class="actions project-actions" data-reveal style="--reveal-delay:360ms">
           <a class="visit" href="https://alcjourney.com/" target="_blank" rel="noopener">
             <span data-i18n="proj.2.cta">افتح رحلة ALC</span>
@@ -122,16 +131,11 @@
 
       <section class="project" data-project="2" id="p-pdf">
         <p class="eyebrow project-eyebrow" data-reveal>
-          <span class="project-num mono">03</span>
+          <span class="project-num" aria-hidden="true"></span>
           <span data-i18n="proj.3.kicker">أدوات · ويب</span>
         </p>
-        <h2 data-reveal style="--reveal-delay:80ms" data-i18n="proj.3.title">قارئ PDF، <em>يُخرج النص من الملف</em></h2>
-        <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="proj.3.body">يستخرج النصوص والجداول من ملفات PDF العربية والإنجليزية، ويعيد ترتيبها قابلًا للتحرير والتصدير، بلا برامج مكتبية.</p>
-        <ul class="project-points" data-reveal style="--reveal-delay:280ms">
-          <li data-i18n="proj.3.p1">استخراج نص عربي وإنجليزي</li>
-          <li data-i18n="proj.3.p2">تحرير الجداول قبل التصدير</li>
-          <li data-i18n="proj.3.p3">كل شيء داخل المتصفح</li>
-        </ul>
+        <h2 data-reveal style="--reveal-delay:80ms" data-i18n="proj.3.title">قارئ PDF، <em>النص حرًّا من ملفه</em></h2>
+        <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="proj.3.body">يستخرج النص والجداول من ملفات PDF العربية والإنجليزية، ويعيدها قابلة للتحرير والتصدير، دون أن تغادر المتصفح.</p>
         <div class="actions project-actions" data-reveal style="--reveal-delay:360ms">
           <a class="visit" href="https://pdfreader-alpha.vercel.app/" target="_blank" rel="noopener">
             <span data-i18n="proj.3.cta">افتح قارئ PDF</span>
@@ -146,16 +150,11 @@
 
       <section class="project" data-project="3" id="p-aia2z">
         <p class="eyebrow project-eyebrow" data-reveal>
-          <span class="project-num mono">04</span>
+          <span class="project-num" aria-hidden="true"></span>
           <span data-i18n="proj.4.kicker">منهج · ذكاء اصطناعي</span>
         </p>
         <h2 data-reveal style="--reveal-delay:80ms" data-i18n="proj.4.title">هندسة الذكاء الاصطناعي، <em>من الصفر فعلًا</em></h2>
-        <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="proj.4.body">٥٠٣ دروس متتابعة تأخذك من الأساسيات إلى نموذج تدرّبه وتختبره بنفسك، بشرح عربي وتجارب تعمل داخل الصفحة.</p>
-        <ul class="project-points" data-reveal style="--reveal-delay:280ms">
-          <li data-i18n="proj.4.p1">٥٠٣ دروس في مسار واحد</li>
-          <li data-i18n="proj.4.p2">تجارب ونماذج داخل المتصفح</li>
-          <li data-i18n="proj.4.p3">من الفكرة إلى التدريب</li>
-        </ul>
+        <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="proj.4.body">٥٠٣ دروس متتابعة، تبدأ من الحرف الأول وتنتهي بنموذج تدرّبه وتختبره بيدك، بشرح عربي وتجارب تعمل داخل الصفحة.</p>
         <div class="actions project-actions" data-reveal style="--reveal-delay:360ms">
           <a class="visit" href="https://ai-a2z.dev/" target="_blank" rel="noopener">
             <span data-i18n="proj.4.cta">افتح المنهج</span>
@@ -170,16 +169,11 @@
 
       <section class="project" data-project="4" id="p-python">
         <p class="eyebrow project-eyebrow" data-reveal>
-          <span class="project-num mono">05</span>
+          <span class="project-num" aria-hidden="true"></span>
           <span data-i18n="proj.5.kicker">منهج · بايثون</span>
         </p>
         <h2 data-reveal style="--reveal-delay:80ms" data-i18n="proj.5.title">بايثون أكاديمي، <em>الكود من أول سطر</em></h2>
         <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="proj.5.body">ست وحدات و٣٦ درسًا في Programming for Data Science، بشرح عربي و١٦ تحدي كود يُصحَّح داخل المتصفح.</p>
-        <ul class="project-points" data-reveal style="--reveal-delay:280ms">
-          <li data-i18n="proj.5.p1">٣٦ درسًا في ست وحدات</li>
-          <li data-i18n="proj.5.p2">١٦ تحدي كود مع تصحيح</li>
-          <li data-i18n="proj.5.p3">من الأساسيات إلى تحليل البيانات</li>
-        </ul>
         <div class="actions project-actions" data-reveal style="--reveal-delay:360ms">
           <a class="visit" href="https://turkihanan1-arch.github.io/python-academy-605/" target="_blank" rel="noopener">
             <span data-i18n="proj.5.cta">افتح بايثون أكاديمي</span>
@@ -232,8 +226,6 @@
             </div>
 
             <a class="screen-tab" id="screenTab" href="https://www.iqudrah.com/" target="_blank" rel="noopener" aria-label="افتح iqudrah.com في تبويب جديد" title="iqudrah.com">
-              <span class="screen-tab-num mono" dir="ltr" lang="en"><b id="screenNum">01</b><span>/ 05</span></span>
-              <span class="screen-tab-rule" aria-hidden="true"></span>
               <span class="screen-tab-dot" aria-hidden="true"></span>
               <span class="screen-tab-domain mono" id="screenDomain" dir="ltr" lang="en">iqudrah.com</span>
               <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -286,39 +278,36 @@
     </div>
   </div>
 
-  <section class="about" id="about">
-    <div class="shell about-grid">
-      <div class="about-copy">
-        <p class="eyebrow" data-reveal data-i18n="about.eyebrow">السيرة</p>
-        <h2 data-reveal style="--reveal-delay:80ms" data-i18n="about.title">أبني ما كنت أبحث عنه <em>ولم أجده</em>.</h2>
-        <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="about.body">بدأ كل منتج من مشكلة واجهتها أو واجهها من حولي: ابن يستعد للقدرات، صديق يترجم مستندًا، ورغبة قديمة في تعلّم الإنجليزية بمنهج واضح. لم أجد الأداة العربية التي أريدها، فبنيتها.</p>
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon-track">
+      <span data-i18n="ribbon">عربيٌّ أولًا<i></i>المنهج قبل الواجهة<i></i>تعلّم لتبني<i></i>ابنِ لتُعلّم<i></i>أطلِق كاملًا<i></i>من الحرف الأول إلى النموذج الأول<i></i></span>
+      <span data-i18n="ribbon">عربيٌّ أولًا<i></i>المنهج قبل الواجهة<i></i>تعلّم لتبني<i></i>ابنِ لتُعلّم<i></i>أطلِق كاملًا<i></i>من الحرف الأول إلى النموذج الأول<i></i></span>
+    </div>
+  </div>
 
-        <div class="principles">
-          <div class="principle" data-reveal style="--reveal-delay:120ms">
-            <span class="principle-num mono">01</span>
-            <div><h3 data-i18n="about.b1.t">المنهج أولًا</h3><p data-i18n="about.b1.d">أبدأ بالمحتوى لا بالواجهة. أقرأ المصدر، أكتب الدرس، ثم أبني ما يجعل الدرس يُفهم: تمرين، تصحيح، ومحاكاة.</p></div>
-          </div>
-          <div class="principle" data-reveal style="--reveal-delay:200ms">
-            <span class="principle-num mono">02</span>
-            <div><h3 data-i18n="about.b2.t">عربي أولًا</h3><p data-i18n="about.b2.d">لا أترجم واجهة إنجليزية. أكتب للعربية: اتجاهها، مصطلحاتها، وأمثلتها.</p></div>
-          </div>
-          <div class="principle" data-reveal style="--reveal-delay:280ms">
-            <span class="principle-num mono">03</span>
-            <div><h3 data-i18n="about.b3.t">متصفح أولًا</h3><p data-i18n="about.b3.d">يعمل على الهاتف، بلا تنزيل، وبأقل ما يمكن من الحسابات. الفكرة تصل قبل أن يثقل التطبيق.</p></div>
-          </div>
-        </div>
+  <section class="vision" id="vision" aria-labelledby="vision-title">
+    <div class="shell">
+      <div class="vision-head">
+        <p class="eyebrow" data-reveal data-i18n="vision.eyebrow">الطموح</p>
+        <h2 id="vision-title" class="vision-title" data-reveal style="--reveal-delay:80ms" data-i18n="vision.title">العربية لا تنتظر من يترجم لها المستقبل، <em>بل من يبنيه بها</em>.</h2>
+        <p class="lede" data-reveal style="--reveal-delay:220ms" data-i18n="vision.body">كل عمل هنا أجاب عن سؤال واحد. والطموح أن تلتقي الأجوبة في طريق واحد، يمضي فيه المتعلّم العربي من أول حرف إلى أول نموذج يدرّبه بيده، بمنهج يحترم عقله ولغته ووقته.</p>
       </div>
 
-      <aside class="timeline-card" data-reveal="from-right" style="--reveal-delay:120ms">
-        <p class="eyebrow timeline-eyebrow" data-i18n="about.tl.label">ما بنيته</p>
-        <ol class="timeline">
-          <li><span class="tl-num mono">01</span><div><h3 data-i18n="about.tl1.t">قُدرة</h3><p data-i18n="about.tl1.d">بنك أسئلة ومحاكاة كاملة</p></div></li>
-          <li><span class="tl-num mono">02</span><div><h3 data-i18n="about.tl2.t">رحلة ALC</h3><p data-i18n="about.tl2.d">ثلاثون كتابًا وبطاقات مراجعة</p></div></li>
-          <li><span class="tl-num mono">03</span><div><h3 data-i18n="about.tl3.t">قارئ PDF</h3><p data-i18n="about.tl3.d">استخراج وتحرير وتصدير</p></div></li>
-          <li><span class="tl-num mono">04</span><div><h3 data-i18n="about.tl4.t">هندسة الذكاء الاصطناعي</h3><p data-i18n="about.tl4.d">٥٠٣ دروس متتابعة</p></div></li>
-          <li><span class="tl-num mono">05</span><div><h3 data-i18n="about.tl5.t">بايثون أكاديمي</h3><p data-i18n="about.tl5.d">٣٦ درسًا و١٦ تحديًا</p></div></li>
-        </ol>
-      </aside>
+      <p class="eyebrow quotes-label" data-reveal data-i18n="vision.qlabel">ما أهتدي به</p>
+      <div class="quotes">
+        <figure class="quote" data-reveal style="--reveal-delay:80ms">
+          <blockquote data-i18n="q1.t">حدودُ لغتي تعني حدودَ عالمي.</blockquote>
+          <figcaption><b data-i18n="q1.a">لودفيغ فتغنشتاين</b><span data-i18n="q1.s">رسالة منطقية فلسفية</span></figcaption>
+        </figure>
+        <figure class="quote" data-reveal style="--reveal-delay:180ms">
+          <blockquote data-i18n="q2.t">من لا يعرف إلى أيّ مرفأ يُبحر، فلا ريحَ تواتيه.</blockquote>
+          <figcaption><b data-i18n="q2.a">سينيكا</b><span data-i18n="q2.s">رسائل إلى لوسيليوس</span></figcaption>
+        </figure>
+        <figure class="quote quote-verse" data-reveal style="--reveal-delay:280ms">
+          <blockquote data-i18n="q3.t">على قدرِ أهلِ العزمِ تأتي العزائمُ<br>وتأتي على قدرِ الكرامِ المكارمُ</blockquote>
+          <figcaption><b data-i18n="q3.a">المتنبي</b><span data-i18n="q3.s">من قصيدته في سيف الدولة</span></figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -327,27 +316,28 @@
       <div class="notes-copy">
         <p class="eyebrow" data-reveal data-i18n="notes.eyebrow">دفتر</p>
         <h2 data-reveal style="--reveal-delay:80ms" data-i18n="notes.title">ما أكتبه <em>لأتذكّر</em>.</h2>
-        <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="notes.body">ثلاث ملاحظات قصيرة من بناء هذه المنتجات. ليست مقالات، لكنها الجمل التي أعود إليها.</p>
+        <p class="body" data-reveal style="--reveal-delay:200ms" data-i18n="notes.body">جُملٌ قصيرة من ورشة البناء، أعود إليها كلما التبس عليّ الطريق.</p>
       </div>
 
       <div class="note-list">
         <details class="note-card" open data-reveal style="--reveal-delay:80ms">
-          <summary><span class="n-index mono">01</span><span class="n-title" data-i18n="notes.n1.t">لماذا أبدأ بالمنهج لا بالواجهة</span><span class="n-meta mono" data-i18n="notes.n1.m">٣ دقائق</span><span class="n-plus" aria-hidden="true"></span></summary>
-          <p data-i18n="notes.n1.b">الواجهة الجميلة تجعل الدرس السيئ أسهل في الاستخدام، لا أفضل. أول ما أكتبه هو السؤال والشرح؛ الشاشة تأتي بعد أن أستطيع تعليمه على ورقة.</p>
+          <summary><span class="n-index" aria-hidden="true"></span><span class="n-title" data-i18n="notes.n1.t">لماذا أبدأ بالمنهج لا بالواجهة</span><span class="n-plus" aria-hidden="true"></span></summary>
+          <p data-i18n="notes.n1.b">الواجهة الجميلة تجعل الدرس الرديء أسهل استعمالًا، لا أجود. أكتب السؤال وشرحه أولًا، ولا تأتي الشاشة إلا بعد أن أستطيع تعليمه على ورقة.</p>
         </details>
 
         <details class="note-card" data-reveal style="--reveal-delay:160ms">
-          <summary><span class="n-index mono">02</span><span class="n-title" data-i18n="notes.n2.t">الترجمة ليست تعريبًا</span><span class="n-meta mono" data-i18n="notes.n2.m">٤ دقائق</span><span class="n-plus" aria-hidden="true"></span></summary>
-          <p data-i18n="notes.n2.b">«Submit» ليست «إرسال» في كل سياق، و«quiz» ليست «اختبارًا» دائمًا. أعيد كتابة الجملة كأنها كُتبت بالعربية أولًا، وأحتفظ بالمصطلح الإنجليزي حين يكون هو المصطلح.</p>
+          <summary><span class="n-index" aria-hidden="true"></span><span class="n-title" data-i18n="notes.n2.t">الترجمة ليست تعريبًا</span><span class="n-plus" aria-hidden="true"></span></summary>
+          <p data-i18n="notes.n2.b">«Submit» ليست «إرسال» في كل سياق، و«quiz» ليست «اختبارًا» دائمًا. أعيد كتابة الجملة كأنها وُلدت بالعربية، وأُبقي المصطلح الإنجليزي حين يكون هو الاسم.</p>
         </details>
 
         <details class="note-card" data-reveal style="--reveal-delay:240ms">
-          <summary><span class="n-index mono">03</span><span class="n-title" data-i18n="notes.n3.t">أطلق صغيرًا، لكن أطلق كاملًا</span><span class="n-meta mono" data-i18n="notes.n3.m">٢ دقائق</span><span class="n-plus" aria-hidden="true"></span></summary>
-          <p data-i18n="notes.n3.b">النسخة الأولى لا تحتاج كل الميزات، لكنها تحتاج أن تكتمل فيها الحلقة: يدخل المتعلم، يفهم، يخطئ، يُصحَّح، ويعود. ما عدا ذلك ميزات تُؤجَّل.</p>
+          <summary><span class="n-index" aria-hidden="true"></span><span class="n-title" data-i18n="notes.n3.t">أطلِق صغيرًا، لكن أطلِق كاملًا</span><span class="n-plus" aria-hidden="true"></span></summary>
+          <p data-i18n="notes.n3.b">لا تحتاج النسخة الأولى كل شيء، لكنها تحتاج حلقةً مكتملة: يدخل المتعلّم، فيفهم، فيخطئ، فيُصحَّح، فيعود. وما سوى ذلك يحتمل الانتظار.</p>
         </details>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer>
@@ -361,7 +351,7 @@
       <span class="footer-rule" aria-hidden="true"></span>
       <ul class="footer-socials">
         <li>
-          <a href="https://github.com/turkihanan1-arch" target="_blank" rel="noopener" aria-label="GitHub">
+          <a href="https://github.com/turkihassan" target="_blank" rel="noopener" aria-label="GitHub">
             <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-1.9c-3.13.68-3.79-1.5-3.79-1.5-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.4-1.22.71-1.5-2.5-.29-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.7 10.7 0 0 1 5.64 0c2.15-1.45 3.1-1.15 3.1-1.15.61 1.55.23 2.69.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.64 5.27-5.15 5.55.41.35.77 1.03.77 2.08v3.09c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
           </a>
           <span class="footer-tip" aria-hidden="true">GitHub</span>
@@ -371,12 +361,6 @@
             <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.6L6.5 22H3.4l7.3-8.3L1 2h6.4l4.5 6.1L18.9 2Zm-1.1 18h1.7L7.1 3.9H5.3L17.8 20Z"/></svg>
           </a>
           <span class="footer-tip" aria-hidden="true">X</span>
-        </li>
-        <li>
-          <a href="mailto:hello@example.com" data-mail aria-label="البريد — راسلني" data-i18n-aria="footer.emailAria">
-            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4.2 6.5 7.8 6 7.8-6"/></svg>
-          </a>
-          <span class="footer-tip" aria-hidden="true" data-i18n="footer.email">البريد</span>
         </li>
       </ul>
     </div>

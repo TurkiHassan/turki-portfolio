@@ -15,8 +15,9 @@ python3 -m http.server 4188
 - `progress.html` — لوحة متابعة المهام والحالة، محلية وتحفظ في `localStorage`.
 - `assets/projects/` — صور الأعمال. `screen-*.jpg` للوحة العرض، و`*.jpg` للجوال.
 - `assets/icons/` — أيقونات الأعمال في الدوك.
-- `assets/fonts/` — Thmanyah Serif Display وEl Messiri.
-- `assets/wall.jpg` — خلفية Unsplash (Hikmet).
+- `assets/fonts/` — Thmanyah Serif Display وEl Messiri، و`amiri-verse.woff2` (خط Amiri مقتطع لبيت المتنبي فقط، رخصة OFL).
+- `assets/wall.jpg` — خلفية Unsplash (Hikmet)، مع نسختي `wall.webp` و`wall-1200.webp` الأخف للمتصفحات الحديثة والجوال.
+- `assets/og.jpg` — صورة المشاركة 1200×630 (og:image).
 
 ## تعديل المحتوى
 
@@ -25,7 +26,6 @@ python3 -m http.server 4188
 - **الأعمال:** لكل عمل قسم `<section class="project" data-project="N" id="p-...">`، وترتيبها هو ترتيب التمرير والدوك.
 - **روابط الأعمال:** في `index.html` (زر «افتح» ورابط النطاق)، وفي مصفوفة `PROJECTS` داخل `app.js` (تحدّث تبويب النافذة عند التمرير).
 - **الحسابات:** روابط GitHub وX في أعلى الصفحة وفي التذييل داخل `index.html`.
-- **البريد:** غيّر `EMAIL` في `app.js` (يمسك كل روابط `data-mail`)، واستبدل `hello@example.com` في `index.html` احتياطًا. العنوان الحالي مؤقت.
 - **اللغة الافتراضية:** العربية. الاختيار يُحفظ في `localStorage` تحت `lang`.
 
 ## لوحة المتابعة
