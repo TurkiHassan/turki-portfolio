@@ -31,10 +31,47 @@
 
     "brand.name": "Turki",
 
-    "hero.title": "Learning products, on the <em>edge</em>.",
+    "hero.kicker": "Five live products · the next ones are bigger",
+    "hero.title": "Building what Arabic <em>deserves</em>.",
+    "hero.for": "For",
     "hero.lede":
-      "Five Arabic products that run in the browser: aptitude-test training, PDF reading, English learning, AI engineering, and Python. All of them here, on the edge of the screen.",
+      "Five Arabic products running in the browser today: aptitude tests, PDF reading, English, AI engineering and Python. Not the end of the list, just its first line: I want every Arabic-speaking learner to find their tool, in their language, on their phone, without waiting for anyone.",
     "hero.cta1": "Start with the work",
+    "hero.cta2": "Read the ambition",
+
+    "pulse.eyebrow": "By the numbers",
+    "pulse.title": "What has been built so far, <em>and it is only the start</em>.",
+    "pulse.s1": "live products on the web",
+    "pulse.s2": "lessons in AI engineering",
+    "pulse.s3": "English words with audio and examples",
+    "pulse.s4": "books from the ALC curriculum",
+    "pulse.s5": "coding challenges graded in the browser",
+
+    "vision.m":
+      "Arabic first<i>✦</i>Method before interface<i>✦</i>Ship it whole<i>✦</i>Learn<i>✦</i>Build<i>✦</i>Share<i>✦</i>From zero to mastery<i>✦</i>",
+    "vision.eyebrow": "The ambition",
+    "vision.title": "Arabic is not waiting for someone to translate the future, <em>but for someone to build it in Arabic</em>.",
+    "vision.body":
+      "Every product here answered one question. The ambition is for those answers to meet in one place, where an Arabic speaker learns from the first letter to the first model they train themselves, with a method that respects their mind, their language and their time.",
+    "vision.h1.tag": "Now",
+    "vision.h1.t": "Five products that work",
+    "vision.h1.d":
+      "Qudrah, ALC Journey, PDF Reader, AI Engineering and Python Academy. All live and open in the browser.",
+    "vision.h2.tag": "Next",
+    "vision.h2.t": "One platform, one path",
+    "vision.h2.d":
+      "Turning the five products into one connected journey: a single account that keeps your progress, and a path that links language to code to AI.",
+    "vision.h3.tag": "Horizon",
+    "vision.h3.t": "An open Arabic reference",
+    "vision.h3.d":
+      "Making good Arabic technical content the rule, not the exception: open lessons, tools others can build on, and a community that writes and teaches alongside me.",
+
+    "build.eyebrow": "Let's build",
+    "build.title": "Got an idea that deserves to be built in Arabic? <em>Let's start it</em>.",
+    "build.body":
+      "I am always looking for a teacher with a method, a developer who wants to build for Arabic, or a learner with a note that makes a lesson clearer. The door is open, and the code is on GitHub.",
+    "build.cta1": "Write to me",
+    "build.cta2": "Follow the build on GitHub",
 
     "mac.menu1": "File",
     "mac.menu2": "Edit",
@@ -151,12 +188,17 @@
   };
 
   const TITLES = {
-    ar: "تركي — منتجات تعليمية عربية، على الطرف",
-    en: "Turki — Arabic learning products, on the edge",
+    ar: "تركي — أبني للعربية ما تستحقه",
+    en: "Turki — Building what Arabic deserves",
   };
   const DESCRIPTIONS = {
-    ar: "خمسة منتجات عربية تعمل في المتصفح: تدريب على القدرات، قراءة PDF، تعلّم الإنجليزية، هندسة الذكاء الاصطناعي، وبايثون.",
-    en: "Five Arabic products that run in the browser: aptitude-test training, PDF reading, English learning, AI engineering, and Python.",
+    ar: "خمسة منتجات عربية حيّة في المتصفح، وطموح أكبر: أن يجد كل متعلّم عربي أداته بلغته، من الصفر إلى الاحتراف.",
+    en: "Five live Arabic products in the browser, and a bigger ambition: every Arabic-speaking learner finding their tool in their own language, from zero to mastery.",
+  };
+
+  const ROTATOR = {
+    ar: ["المتعلّم الطموح", "المعلّم صاحب المنهج", "المطوّر العربي", "الجيل القادم"],
+    en: ["the ambitious learner", "the teacher with a method", "the Arab developer", "the next generation"],
   };
 
   const html = document.documentElement;
@@ -398,6 +440,95 @@
     updateActive();
   }
 
+  /* --------------------------------------------------------------- rotator */
+
+  let rotIndex = 0;
+  let rotTimer = null;
+
+  function rotatorWord() {
+    return $("#rotator .rotator-word");
+  }
+
+  function renderRotator() {
+    const word = rotatorWord();
+    if (word) word.textContent = ROTATOR[lang][rotIndex % ROTATOR[lang].length];
+  }
+
+  function stepRotator() {
+    const word = rotatorWord();
+    if (!word) return;
+    word.classList.add("is-out");
+    setTimeout(() => {
+      rotIndex = (rotIndex + 1) % ROTATOR[lang].length;
+      renderRotator();
+      word.classList.remove("is-out");
+      word.classList.add("is-in-start");
+      void word.offsetWidth;
+      word.classList.remove("is-in-start");
+    }, 380);
+  }
+
+  function initRotator() {
+    renderRotator();
+    if (reduceMotion || rotTimer) return;
+    rotTimer = setInterval(() => {
+      if (!document.hidden) stepRotator();
+    }, 2800);
+  }
+
+  /* ------------------------------------------------------------- count-up */
+
+  const counters = $$("[data-count]");
+
+  function formatNumber(value) {
+    try {
+      return new Intl.NumberFormat(lang === "ar" ? "ar-SA-u-nu-arab" : "en-US").format(value);
+    } catch (e) {
+      return String(value);
+    }
+  }
+
+  function renderCounter(el) {
+    const value = el._value == null ? Number(el.dataset.count) : el._value;
+    el.textContent = formatNumber(value);
+  }
+
+  function runCounter(el) {
+    const target = Number(el.dataset.count) || 0;
+    const duration = 1600;
+    const start = performance.now();
+    const frame = (now) => {
+      const t = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - t, 4);
+      el._value = Math.round(target * eased);
+      renderCounter(el);
+      if (t < 1) requestAnimationFrame(frame);
+    };
+    requestAnimationFrame(frame);
+  }
+
+  function initCounters() {
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      counters.forEach(renderCounter);
+      return;
+    }
+    counters.forEach((el) => {
+      el._value = 0;
+      renderCounter(el);
+    });
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          io.unobserve(entry.target);
+          runCounter(entry.target);
+        });
+      },
+      { threshold: 0.4 }
+    );
+    counters.forEach((el) => io.observe(el));
+  }
+
   /* ------------------------------------------------------------- mail + lang */
 
   function initMail() {
@@ -410,6 +541,8 @@
     applyStrings();
     updateTabAria(current < 0 ? 0 : current);
     splitHeadings();
+    renderRotator();
+    counters.forEach(renderCounter);
     tick();
     if (persist) {
       try {
@@ -428,8 +561,10 @@
   /* ------------------------------------------------------------------ init */
 
   initMail();
+  initCounters();
   setLang(lang, false);
   initPanel();
+  initRotator();
 
   $("#langSwitch")?.addEventListener("click", toggleLang);
   $("#handle")?.addEventListener("click", toggleLang);
