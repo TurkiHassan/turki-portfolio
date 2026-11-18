@@ -15,8 +15,9 @@ python3 -m http.server 4188
 - `progress.html` — لوحة متابعة المهام والحالة، محلية وتحفظ في `localStorage`.
 - `assets/projects/` — صور الأعمال. `screen-*.jpg` للوحة العرض، و`*.jpg` للجوال.
 - `assets/icons/` — أيقونات الأعمال في الدوك.
-- `assets/fonts/` — Thmanyah Serif Display وEl Messiri.
-- `assets/wall.jpg` — خلفية Unsplash (Hikmet).
+- `assets/fonts/` — Thmanyah Serif Display وEl Messiri، و`amiri-verse.woff2` (خط Amiri مقتطع لبيت المتنبي فقط، رخصة OFL).
+- `assets/wall.jpg` — خلفية Unsplash (Hikmet)، مع نسختي `wall.webp` و`wall-1200.webp` الأخف للمتصفحات الحديثة والجوال.
+- `assets/og.jpg` — صورة المشاركة 1200×630 (og:image).
 
 ## تعديل المحتوى
 

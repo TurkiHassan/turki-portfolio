@@ -33,6 +33,13 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Amiri Verse";
+  src: url("assets/fonts/amiri-verse.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "El Messiri";
   src: url("assets/fonts/el-messiri-arabic.woff2") format("woff2");
   font-weight: 400 700;
@@ -1570,6 +1577,11 @@ html[lang="en"] .quote::before {
 }
 html[lang="en"] .quote blockquote {
   line-height: 1.35;
+}
+html[lang="ar"] .quote-verse blockquote {
+  font-family: "Amiri Verse", var(--font-display);
+  font-size: clamp(23px, 2.05vw, 28px);
+  line-height: 2;
 }
 .quote figcaption {
   display: flex;
