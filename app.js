@@ -120,7 +120,6 @@
       "The first version does not need everything, but it needs a closed loop: the learner arrives, understands, errs, is corrected, and returns. Everything else can wait.",
 
     "footer.mark": "Turki · 2026",
-    "footer.credit": "Background: Hikmet on Unsplash",
   };
 
   const TITLES = {
