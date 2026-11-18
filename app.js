@@ -119,12 +119,6 @@
     "notes.n3.b":
       "The first version does not need everything, but it needs a closed loop: the learner arrives, understands, errs, is corrected, and returns. Everything else can wait.",
 
-    "build.eyebrow": "Let's build",
-    "build.title": "Got an idea that deserves to be built in Arabic? <em>Let's start it</em>.",
-    "build.body":
-      "A teacher with a method, a developer who wants to build for Arabic, or a learner who noticed what would make a lesson clearer: the door is open.",
-    "build.cta2": "Follow the build on GitHub",
-
     "footer.mark": "Turki · 2026",
     "footer.credit": "Background: Hikmet on Unsplash",
   };

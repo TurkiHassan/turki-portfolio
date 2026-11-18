@@ -1418,17 +1418,10 @@ html:not(.reveal) [data-split] .wi,
 .ghost svg {
   flex-shrink: 0;
 }
-.ghost-handle {
-  color: var(--faint);
-  font-size: 13px;
-  font-weight: 500;
-}
-
 /* -- shared section frame ----------------------------------------------- */
 
 .ribbon,
-.vision,
-.build {
+.vision {
   position: relative;
   z-index: 1;
   background: #050608;
@@ -1596,46 +1589,6 @@ html[lang="en"] .quote blockquote {
 }
 
 
-/* -- build (closing call) ----------------------------------------------- */
-
-.build {
-  padding-block: clamp(80px, 10vh, 130px);
-}
-.build-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 18px;
-  overflow: hidden;
-  padding: clamp(30px, 5vw, 64px);
-  border: 1px solid #ffffff1c;
-  border-radius: 32px;
-  background: linear-gradient(160deg, #0d1628 0%, #070a10 70%);
-  box-shadow: 0 40px 90px #00000080;
-}
-.build-glow {
-  position: absolute;
-  inset-block-end: -55%;
-  inset-inline-end: -15%;
-  width: 70%;
-  aspect-ratio: 1;
-  background: radial-gradient(closest-side, #1c79ff5e, transparent);
-  filter: blur(30px);
-  pointer-events: none;
-  animation: drift 14s ease-in-out infinite alternate;
-}
-.build-card > :not(.build-glow) {
-  position: relative;
-}
-.build-card h2 {
-  max-width: 22ch;
-  font-size: clamp(30px, 3.6vw, 50px);
-}
-.build-card .body {
-  max-width: 58ch;
-}
-
 @media (max-width: 1100px) {
   .quotes {
     grid-template-columns: minmax(0, 1fr);
@@ -1652,12 +1605,6 @@ html[lang="en"] .quote blockquote {
   .ribbon {
     padding-block: 18px;
   }
-  .build {
-    padding-block: 64px;
-  }
-  .build-card {
-    border-radius: 24px;
-  }
   .quote {
     padding: 38px 22px 22px;
   }
@@ -1667,9 +1614,6 @@ html[lang="en"] .quote blockquote {
   .actions .ghost,
   .actions .buy {
     flex: 1 1 100%;
-  }
-  .ghost-handle {
-    display: none;
   }
 }
 
