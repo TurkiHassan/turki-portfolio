@@ -23,7 +23,6 @@
   ];
 
   const EN = {
-    "landscape.scroll": "Scroll into dusk",
     "landscape.replay": "Replay the signature",
     "ui.skip": "Skip to content",
     "ui.langTarget": "عربي",
@@ -37,7 +36,7 @@
     "hero.lede":
       "Every tool here began as a question I could not answer in Arabic, so I wrote the answer myself. Five works run in the browser today; they are the first line of the story, not its last.",
     "hero.cta1": "Start with the work",
-    "hero.cta2": "Read the ambition",
+    "hero.cta2": "Philosophy",
 
     "mac.menu1": "File",
     "mac.menu2": "Edit",

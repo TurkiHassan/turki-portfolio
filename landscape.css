@@ -48,10 +48,8 @@ body { isolation: isolate; }
 #replay.has-ink .signature-name { display: none; }
 .signature { display: block; min-height: 1.2em; padding-left: .1em; font: 400 clamp(1.4rem,2.3vw,2.7rem)/1.2 "Courier New",monospace; letter-spacing: -.07em; white-space: pre; }
 .signature.typing::after { content: "▏"; font-size: .85em; }
-.landscape-scroll { position: absolute; right: clamp(22px,4.7vw,86px); bottom: 8%; display: inline-flex; align-items: center; gap: 10px; padding: 8px 4px; color: white; font-size: 1rem; text-decoration: none; text-shadow: 0 1px 5px #0a101a; }
 @media(max-width:650px) {
   .landscape-caption { left: 7vw; bottom: 16%; }
-  .landscape-scroll { right: 7vw; bottom: 5%; }
   .reading-shade { background: linear-gradient(180deg,#060b136b,#060c17a8 45%,#060b13ad); }
 }
 @media(prefers-reduced-motion:reduce) { .has-landscape .landscape-intro { height: 145vh; height: 145svh; } }
