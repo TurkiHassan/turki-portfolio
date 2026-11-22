@@ -23,7 +23,9 @@
 <link rel="preload" href="assets/fonts/thmanyah-serif-display-300.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/thmanyah-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/el-messiri-arabic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/landscape/day-poster.webp">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="landscape.css">
 <script>
 (function () {
   var d = document.documentElement;
@@ -44,14 +46,27 @@
 <a class="skip" href="#main" data-i18n="ui.skip">تخطَّ إلى المحتوى</a>
 <div class="top-veil" aria-hidden="true"></div>
 
-<div class="desk" aria-hidden="true"></div>
-<div class="wall" aria-hidden="true">
-  <picture>
-    <source type="image/webp" srcset="assets/wall-1200.webp 1200w, assets/wall.webp 2200w" sizes="100vw">
-    <img class="wall-photo" src="assets/wall.jpg" alt="" width="2200" height="1133" fetchpriority="high">
-  </picture>
-  <div class="wall-scrim"></div>
-  <div class="wall-grain"></div>
+<div id="scene" class="landscape" aria-hidden="true">
+  <div class="landscape-day-poster"></div>
+  <canvas id="birds"></canvas>
+  <div class="sunset-light"></div>
+  <div class="twilight-light"></div>
+  <div class="reading-shade"></div>
+</div>
+
+<div class="landscape-intro" id="landscape-intro">
+  <div class="landscape-pin">
+    <div class="landscape-caption" dir="ltr" lang="en">
+      <button type="button" id="replay" aria-label="أعد كتابة التوقيع" data-i18n-aria="landscape.replay">
+        <span class="signature-name">Turki</span><canvas id="hand" aria-hidden="true"></canvas>
+      </button>
+      <span class="signature">..NeverMind</span>
+    </div>
+    <a class="landscape-scroll" href="#main">
+      <span data-i18n="landscape.scroll">مرّر نحو الغروب</span>
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v13m-5-5 5 5 5-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
 </div>
 
 <button class="lang-switch" type="button" id="langSwitch" aria-label="Switch to English" data-i18n-aria="ui.langAria">
@@ -69,7 +84,7 @@
   </a>
 </nav>
 
-<main id="main">
+<main id="main" tabindex="-1">
   <div class="layout">
     <div class="column">
 
@@ -366,5 +381,7 @@
 </footer>
 
 <script src="app.js" defer></script>
+<script src="landscape-scroll.js" defer></script>
+<script type="module" src="assets/landscape/scene.js"></script>
 </body>
 </html>

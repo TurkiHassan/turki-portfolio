@@ -1,0 +1,57 @@
+/* A single painted horizon stays aligned through the intro and the portfolio. */
+body { isolation: isolate; }
+.landscape {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  isolation: isolate;
+  pointer-events: none;
+  overflow: hidden;
+  background: #101724 url("assets/landscape/night-poster.webp") center / cover no-repeat;
+}
+.landscape > * { position: absolute; inset: 0; width: 100%; height: 100%; }
+.landscape-day-poster { background: url("assets/landscape/day-poster.webp") center / cover no-repeat; opacity: var(--day-poster,0); }
+.landscape.is-painted .landscape-day-poster { visibility: hidden; }
+.landscape .surface { z-index: 1; }
+.landscape #birds { z-index: 2; }
+.sunset-light {
+  z-index: 3;
+  background: linear-gradient(180deg, #9c6898 0%, #ed9979 25%, #ffab57 47%, #bd7451 64%, #9d613e);
+  mix-blend-mode: color;
+  opacity: var(--sunset,0);
+}
+.twilight-light {
+  z-index: 3;
+  background: linear-gradient(180deg, #414997 3%, #a66f9b 32%, #e79677 49%, #6f607f 68%, #414c69);
+  mix-blend-mode: color;
+  opacity: var(--twilight,0);
+}
+.reading-shade {
+  z-index: 4;
+  background: linear-gradient(90deg,#080e175e,#070c1494 56%,#060b13d6);
+  opacity: var(--reading,1);
+}
+[dir="ltr"] .reading-shade { transform: scaleX(-1); }
+.has-landscape .top-veil { opacity: calc(.12 + .85 * var(--reading,0)); }
+.landscape-intro { display: none; }
+.has-landscape .landscape-intro { display: block; position: relative; height: 220vh; height: 220svh; }
+.landscape-pin { position: sticky; top: 0; height: 100vh; height: 100svh; opacity: var(--caption,1); }
+.landscape-pin::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(0deg,#08121c68,transparent 33%),radial-gradient(ellipse at 4% 98%,#08132076,transparent 46%);
+}
+.landscape-caption { position: absolute; left: clamp(24px,5.3vw,110px); bottom: 9%; color: white; text-align: left; }
+#replay { display: block; width: clamp(185px,19.5vw,365px); line-height: 1; padding: 0; margin: 0; color: inherit; background: none; border: none; cursor: pointer; }
+#replay .signature-name { font: italic 5rem Georgia,serif; }
+#replay #hand { display: none; width: 100%; aspect-ratio: 304/122; filter: drop-shadow(0 2px 7px #10192750); }
+#replay.has-ink #hand { display:block; }
+#replay.has-ink .signature-name { display: none; }
+.signature { display: block; min-height: 1.2em; padding-left: .1em; font: 400 clamp(1.4rem,2.3vw,2.7rem)/1.2 "Courier New",monospace; letter-spacing: -.07em; white-space: pre; }
+.signature.typing::after { content: "▏"; font-size: .85em; }
+.landscape-scroll { position: absolute; right: clamp(22px,4.7vw,86px); bottom: 8%; display: inline-flex; align-items: center; gap: 10px; padding: 8px 4px; color: white; font-size: 1rem; text-decoration: none; text-shadow: 0 1px 5px #0a101a; }
+@media(max-width:650px) {
+  .landscape-caption { left: 7vw; bottom: 16%; }
+  .landscape-scroll { right: 7vw; bottom: 5%; }
+  .reading-shade { background: linear-gradient(180deg,#060b136b,#060c17a8 45%,#060b13ad); }
+}
+@media(prefers-reduced-motion:reduce) { .has-landscape .landscape-intro { height: 145vh; height: 145svh; } }

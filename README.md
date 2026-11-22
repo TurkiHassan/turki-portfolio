@@ -16,7 +16,7 @@ python3 -m http.server 4188
 - `assets/projects/` — صور الأعمال. `screen-*.jpg` للوحة العرض، و`*.jpg` للجوال.
 - `assets/icons/` — أيقونات الأعمال في الدوك.
 - `assets/fonts/` — Thmanyah Serif Display وEl Messiri، و`amiri-verse.woff2` (خط Amiri مقتطع لبيت المتنبي فقط، رخصة OFL).
-- `assets/wall.jpg` — خلفية Unsplash (Hikmet)، مع نسختي `wall.webp` و`wall-1200.webp` الأخف للمتصفحات الحديثة والجوال.
+- `assets/landscape/` — اللوحة وطبقاتها ومحرّك Three.js المحلي. يربط `landscape-scroll.js` ضوء المشهد بتمرير المقدمة، ويضبط `landscape.css` ألوان الغروب والشفق وتباين النص فوق الخلفية الليلية.
 - `assets/og.jpg` — صورة المشاركة 1200×630 (og:image).
 
 ## تعديل المحتوى
@@ -42,4 +42,4 @@ python3 -m http.server 4188
 - صور لوحة العرض مقاس 1280×1422، وتُقص من الأعلى داخل اللوحة.
 - لاستبدال صورة: استخدم `assets/projects/screen-<name>.jpg` بالمقاس نفسه، وحدّث المسار في `index.html`.
 - الخطوط محلية؛ راجع ملفاتها في `assets/fonts/` للترخيص قبل إعادة التوزيع.
-- الخلفية من Unsplash (Hikmet)، ورخصتها لا تشترط ذكر المصدر في الصفحة.
+- رخصة Three.js مرفقة في `assets/landscape/three-LICENSE.txt`.

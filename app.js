@@ -23,6 +23,8 @@
   ];
 
   const EN = {
+    "landscape.scroll": "Scroll into dusk",
+    "landscape.replay": "Replay the signature",
     "ui.skip": "Skip to content",
     "ui.langTarget": "عربي",
     "ui.langAria": "Switch to Arabic",
